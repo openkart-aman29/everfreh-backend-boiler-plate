@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BaseBookingDAO = void 0;
 const Database_Connection_Manager_1 = require("../../../../database/Database_Connection_Manager");
-const Booking_Logger_1 = require("../../logger/Booking_Logger");
+const Booking_Logger_1 = require("../../../../features/bookings/logger/Booking_Logger");
 class BaseBookingDAO {
     getPool() {
         try {

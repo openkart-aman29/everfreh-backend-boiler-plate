@@ -4,7 +4,7 @@ import { getErrorStatus } from '@/utilities/http/constants/HTTP_Status_Codes';
 import { generateULID } from '@/utilities/id_generator/ULID_Generator';
 // import { checkCustomerExistDAO } from '@/features/customers/database/dao/Check_Customer_Exist_DAO';
 // import { checkServiceExistDAO } from '@/features/services/database/dao/Check_Service_Exist_DAO';
-import { createBookingDAO } from '../dao/Create_Booking_DAO';
+import { createBookingDAO } from '@/features/bookings/operations/create/dao/Create_Booking_DAO';
 import { BookingInterface } from '@/features/bookings/interface/Booking_Interface';
 
 interface CreateBookingServiceInput {

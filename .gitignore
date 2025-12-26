@@ -1,0 +1,49 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+lib/
+out-tsc/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables and secrets
+# .env
+# .env.*
+# envs/
+rsa-keys/
+*.pem
+*.key
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Test output
+.jest/
+.cache/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+.parcel-cache/
+.turbo/
+.eslintcache
+.vscode-test/
+*.tgz

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.closeDatabase = exports.getDatabase = exports.connectDatabase = void 0;
 const pg_1 = require("pg");
-const ENV_Configuration_1 = require("./ENV_Configuration");
+const ENV_Configuration_1 = require("../configurations/ENV_Configuration");
 const Logger_Manager_1 = require("../utilities/logger/manager/Logger_Manager");
 const databaseLogger = (0, Logger_Manager_1.createFeatureLogger)('Database');
 let pool = null;

@@ -1,6 +1,6 @@
 import { Pool, PoolClient } from 'pg';
-import { ENV } from './ENV_Configuration';
-import { createFeatureLogger } from '../utilities/logger/manager/Logger_Manager';
+import { ENV } from '@/configurations/ENV_Configuration';
+import { createFeatureLogger } from '@/utilities/logger/manager/Logger_Manager';
 
 const databaseLogger = createFeatureLogger('Database');
 

@@ -1,10 +1,10 @@
 import { Request, Response } from 'express';
 import { bookingLogger } from '@/features/bookings/logger/Booking_Logger';
-import { createBookingZodSchema } from '../zod_schema/Create_Booking_Zod_Schema';
+import { createBookingZodSchema } from '@/features/bookings/operations/create/zod_schema/Create_Booking_Zod_Schema';
 import { sendResponse } from '@/utilities/http/http-response/Standard_Response';
 import { StandardResponseInterface } from '@/utilities/global_interfaces/Standard_Response_Interface';
 import { getErrorStatus } from '@/utilities/http/constants/HTTP_Status_Codes';
-import { createBookingService } from '../service/Create_Booking_Service';
+import { createBookingService } from '@/features/bookings/operations/create/service/Create_Booking_Service';
 import { ZodError } from 'zod';
 
 export const createBookingController = async (req: Request, res: Response) => {

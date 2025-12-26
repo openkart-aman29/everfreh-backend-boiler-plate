@@ -9,8 +9,8 @@ let pool = null;
 const connectDatabase = async () => {
     try {
         pool = new pg_1.Pool({
-            host: ENV_Configuration_1.ENV.DB_HOST,
-            port: ENV_Configuration_1.ENV.DB_PORT,
+            host: ENV_Configuration_1.ENV.DB_HOST, //10.10.0.20
+            port: ENV_Configuration_1.ENV.DB_PORT, //5432
             database: ENV_Configuration_1.ENV.DB_NAME,
             user: ENV_Configuration_1.ENV.DB_USER,
             password: ENV_Configuration_1.ENV.DB_PASSWORD,

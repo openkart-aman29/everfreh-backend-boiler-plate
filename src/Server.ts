@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import app from './App';
-import { ENV } from './configurations/ENV_Configuration';
-import { connectDatabase } from './database/Database_Connection_Manager';
-import { createFeatureLogger } from './utilities/logger/manager/Logger_Manager';
+import app from '@/App';
+import { ENV } from '@/configurations/ENV_Configuration';
+import { connectDatabase } from '@/database/Database_Connection_Manager';
+import { createFeatureLogger } from '@/utilities/logger/manager/Logger_Manager';
 
 const serverLogger = createFeatureLogger('Server');
 

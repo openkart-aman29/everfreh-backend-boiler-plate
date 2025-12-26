@@ -1,5 +1,5 @@
 import rateLimit from 'express-rate-limit';
-import { ENV } from '../../configurations/ENV_Configuration';
+import { ENV } from '@/configurations/ENV_Configuration';
 
 export const rateLimitMiddleware = rateLimit({
     windowMs: ENV.RATE_LIMIT_WINDOW_MS,

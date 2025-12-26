@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { createBookingController } from '../operations/create/controller/Create_Booking_Controller';
-// import { readBookingController } from '../operations/read/controller/Read_Booking_Controller';
-// import { readAllBookingsController } from '../operations/read_all/controller/Read_All_Bookings_Controller';
-// import { updateBookingController } from '../operations/update/controller/Update_Booking_Controller';
-// import { cancelBookingController } from '../operations/cancel/controller/Cancel_Booking_Controller';
+import { createBookingController } from '@/features/bookings/operations/create/controller/Create_Booking_Controller';
+// import { readBookingController } from '@/features/bookings/operations/read/controller/Read_Booking_Controller';
+// import { readAllBookingsController } from '@/features/bookings/operations/read_all/controller/Read_All_Bookings_Controller';
+// import { updateBookingController } from '@/features/bookings/operations/update/controller/Update_Booking_Controller';
+// import { cancelBookingController } from '@/features/bookings/operations/cancel/controller/Cancel_Booking_Controller';
 import { accessTokenVerificationMiddleware } from '@/modules/auth/middleware/JWT_Verification_Middleware';
 import { rateLimitMiddleware } from '@/utilities/middleware/Rate_Limit_Middleware';
 

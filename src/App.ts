@@ -3,10 +3,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
-import { ENV } from './configurations/ENV_Configuration';
-import { connectDatabase } from './database/Database_Connection_Manager';
-import mainRouter from './router/Main_Router';
-import { createFeatureLogger } from './utilities/logger/manager/Logger_Manager';
+import { ENV } from '@/configurations/ENV_Configuration';
+import { connectDatabase } from '@/database/Database_Connection_Manager';
+import mainRouter from '@/router/Main_Router';
+import { createFeatureLogger } from '@/utilities/logger/manager/Logger_Manager';
 
 const appLogger = createFeatureLogger('App');
 
@@ -56,7 +56,7 @@ app.get('/health', (req, res) => {
 app.use('/api/v1', mainRouter);
 
 // 404 handler
-app.use('*', (req, res) => {
+app.use((req, res) => {
     res.status(404).json({
         success: false,
         message: 'Route not found',

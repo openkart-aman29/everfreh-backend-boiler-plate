@@ -1,6 +1,6 @@
 import { Pool } from 'pg';
 import { getDatabase } from '@/database/Database_Connection_Manager';
-import { bookingLogger } from '../../logger/Booking_Logger';
+import { bookingLogger } from '@/features/bookings/logger/Booking_Logger';
 
 export abstract class BaseBookingDAO {
     protected getPool(): Pool | null {

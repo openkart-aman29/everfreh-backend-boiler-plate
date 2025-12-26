@@ -1,6 +1,6 @@
 import { Pool, PoolClient } from 'pg';
-import { ENV } from '../configurations/ENV_Configuration';
-import { createFeatureLogger } from '../utilities/logger/manager/Logger_Manager';
+import { ENV } from '@/configurations/ENV_Configuration';
+import { createFeatureLogger } from '@/utilities/logger/manager/Logger_Manager';
 
 const databaseLogger = createFeatureLogger('Database');
 
@@ -9,8 +9,8 @@ let pool: Pool | null = null;
 export const connectDatabase = async (): Promise<boolean> => {
     try {
         pool = new Pool({
-            host: ENV.DB_HOST,
-            port: ENV.DB_PORT,
+            host: ENV.DB_HOST,  //10.10.0.20
+            port: ENV.DB_PORT,  //5432
             database: ENV.DB_NAME,
             user: ENV.DB_USER,
             password: ENV.DB_PASSWORD,

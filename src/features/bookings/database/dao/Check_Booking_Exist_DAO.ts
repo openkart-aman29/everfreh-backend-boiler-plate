@@ -1,4 +1,4 @@
-import { BaseBookingDAO } from './Base_Booking_DAO';
+import { BaseBookingDAO } from '@/features/bookings/database/dao//Base_Booking_DAO';
 
 class CheckBookingExistDAO extends BaseBookingDAO {
     async checkBookingExist(booking_id: string): Promise<{ exists: boolean }> {
