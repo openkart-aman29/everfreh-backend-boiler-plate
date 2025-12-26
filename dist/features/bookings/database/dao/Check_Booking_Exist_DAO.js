@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkBookingExistDAO = checkBookingExistDAO;
-const Base_Booking_DAO_1 = require("./Base_Booking_DAO");
+const Base_Booking_DAO_1 = require("../../../../features/bookings/database/dao/Base_Booking_DAO");
 class CheckBookingExistDAO extends Base_Booking_DAO_1.BaseBookingDAO {
     async checkBookingExist(booking_id) {
         try {

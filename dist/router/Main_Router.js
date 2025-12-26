@@ -8,7 +8,7 @@ const Booking_Router_1 = __importDefault(require("../features/bookings/router/Bo
 // import companyRouter from '@/features/companies/router/Company_Router';
 // import serviceRouter from '@/features/services/router/Service_Router';
 // import customerRouter from '@/features/customers/router/Customer_Router';
-// import staffRouter from '@/features/staff/router/Staff_Router';
+// import staffRouter from '../features/staff/router/Staff_Router';
 // import paymentRouter from '@/features/payments/router/Payment_Router';
 const mainRouter = (0, express_1.Router)();
 // Feature routes
